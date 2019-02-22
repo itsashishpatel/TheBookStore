@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navhome"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/navnew"
+            android:icon="@drawable/books"
+            android:title="New Arrival"
+            android:visible="false"/>
+        <item
+            android:id="@+id/navinsti"
+
+            android:icon="@drawable/college"
+            android:title="Search by Institute" />
+        <item
+            android:id="@+id/navcity"
+            android:icon="@drawable/city"
+            android:title="Search by City" />
+        <item
+            android:id="@+id/navpost"
+            android:icon="@drawable/notebook"
+            android:title="Post Book" />
+        <item
+            android:id="@+id/navmybook"
+            android:icon="@drawable/mybook"
+            android:title="My Books" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/navmessage"
+                android:icon="@drawable/envelope"
+                android:visible="false"
+                android:title="Messages" />
+            <item
+                android:id="@+id/navcontactus"
+                android:icon="@drawable/contact"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/navfeedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

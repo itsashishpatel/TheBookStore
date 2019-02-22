@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:id="@+id/txtlogin"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgpro"
+        android:src="@drawable/logo"
+        app:civ_border_color="@android:color/black"
+        app:civ_border_width="2dp"/>
+
+        <TextView
+            android:id="@+id/txtclickimg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Image to edit"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/editshape">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the name"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:inputType="textPersonName"
+            android:drawablePadding="20dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/edproname"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/editshape">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Phone Number"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:inputType="textPersonName"
+            android:drawablePadding="20dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/edprophone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/editshape">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="20dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/edproadd"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/editshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Gender"
+            android:id="@+id/txtprogender1"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Gender"
+            android:id="@+id/txtprogender"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+
+        <AutoCompleteTextView
+            android:background="@drawable/editshape"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnprogender"
+            android:paddingLeft="10dp"></AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/editshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Gender"
+            android:id="@+id/txtprocountry1"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Country"
+            android:id="@+id/txtprocountry"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnprocountry"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/lincity"
+        android:background="@drawable/editshape">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect City"
+            android:id="@+id/txtprocity1"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect City"
+            android:id="@+id/txtprocity"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <AutoCompleteTextView
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/editshape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnprocity"
+            android:paddingLeft="10dp"></AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/editshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Institute"
+            android:id="@+id/txtproinstitute1"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Institute"
+            android:id="@+id/txtproinstitute"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <AutoCompleteTextView
+            android:background="@drawable/editshape"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnproinstitute"
+            android:paddingLeft="10dp"></AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/editshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Type"
+            android:id="@+id/txtprotype1"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slect Type"
+            android:id="@+id/txtprotype"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10dp"/>
+
+        <AutoCompleteTextView
+            android:background="@drawable/editshape"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnprotype"
+            android:paddingLeft="10dp"></AutoCompleteTextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnshape"
+        android:id="@+id/btnupdatepro"/>
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/edit"
+            android:background="@android:color/transparent"
+            android:text="Edit"
+            android:id="@+id/btnproedit"
+            android:layout_gravity="end"
+
+            android:layout_marginRight="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/cancel"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:visibility="gone"
+        android:id="@+id/btnprocancel"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+
+    </FrameLayout>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/editshape"
+        android:hint="Enter name"
+        android:windowSoftInputMode="stateAlwaysVisible"
+        android:id="@+id/edsearch"
+        android:drawableLeft="@drawable/searc"
+        android:drawablePadding="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvbooks"></ListView>
+
+</LinearLayout>

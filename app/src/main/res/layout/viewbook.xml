@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbook"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/txtclickimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click Image to edit"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/editshape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the name of book"
+                    android:textColorHint="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:paddingBottom="5dp"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/edbookname"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect Type"
+                    android:id="@+id/txtbooktype"
+                    android:visibility="gone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+                <TextView
+                    android:background="@drawable/editshape"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnbooktype"
+                    android:padding="20dp"></TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect Condition"
+                    android:id="@+id/txtbookcondition"
+                    android:visibility="gone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+                <TextView
+                    android:background="@drawable/editshape"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnbookcondition"
+                    android:padding="20dp"></TextView>
+
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/editshape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the name of the writer"
+                    android:textColorHint="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/edbookwritername"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/editshape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the discription"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:lines="5"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/edbookdiscri"/>
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect what to do"
+                    android:id="@+id/txtbooksell"
+                    android:visibility="gone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+
+                <TextView
+                    android:background="@drawable/editshape"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnbooksell"
+                    android:padding="20dp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect Country"
+                    android:visibility="gone"
+                    android:id="@+id/txtbookcountry"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnbookcountry"
+                    android:textSize="20dp"
+                    android:padding="20dp"></TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect City"
+                    android:id="@+id/txtbookcity"
+                    android:visibility="gone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+
+                <TextView
+                    android:background="@drawable/editshape"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnbookcity"
+                    android:padding="20dp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/editshape">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slect Institute"
+                    android:id="@+id/txtinstitute"
+                    android:visibility="gone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:background="@drawable/editshape"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spninstitute"
+                    android:padding="20dp"></TextView>
+
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/editshape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the market price"
+                    android:textColorHint="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:lines="5"
+                    android:textColor="@color/colorAccent"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:inputType="number"
+                    android:drawablePadding="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/edbookmarketprice"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/editshape">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the selling price"
+                    android:textColorHint="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:lines="5"
+                    android:textColor="@color/colorAccent"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:inputType="number"
+                    android:drawablePadding="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/edbooksellingprice"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Book"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btnshape"
+                android:id="@+id/btnaddbook"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Book"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btnshape"
+                    android:id="@+id/btnbuybook"/>
+                <Button
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Exchange"
+                    android:background="@drawable/btnshape"
+                    android:id="@+id/btnexchange"/>
+
+                <Button
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rent"
+                    android:background="@drawable/btnshape"
+                    android:id="@+id/btnrent"/>
+
+                <Button
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:visibility="gone"
+                    android:background="@drawable/btnshape"
+                    android:id="@+id/btnedit"/>
+
+                <Button
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:background="@drawable/btnshape"
+                    android:id="@+id/btndelete"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
